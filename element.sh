@@ -1,8 +1,7 @@
 DEFAULT() {
   if [[ -z $1 ]] 
   then
-    echo Please provide an element as an argument
-    exit 1
+    echo "Please provide an element as an argument."
   else
     echo "I could not find that element in the database."
   fi
@@ -47,7 +46,6 @@ FLUORINE() {
 NEON() {
   echo "The element with atomic number 10 is Neon (Ne). It's a nonmetal, with a mass of 20.18 amu. Neon has a melting point of -248.6 celsius and a boiling point of -246.1 celsius."
 }
-
 
 case $1 in
   1|H|Hydrogen) HYDROGEN ;;
